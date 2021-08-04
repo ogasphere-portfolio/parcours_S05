@@ -39,43 +39,14 @@ $altoRouter->map(
 
 $altoRouter->map(
     'GET',
-    '/mentions-legales',
+    '/createurs',
     [
-        "method" => "displayLegalNotice",
+        "method" => "displayCréateur",
         "controller" => "MainController"
     ],
-    'legalNotice'
+    'createurs'
 );
 
-$altoRouter->map(
-    'GET',
-    '/A_Propos',
-    [
-        "method" => "displayAbout",
-        "controller" => "MainController"
-    ],
-    'about'
-);
-
-$altoRouter->map(
-    'GET',
-    '/catalogue/personnage/[i:id]',
-    [
-        "method" => "displayCharacter",
-        "controller" => "CatalogController"
-    ],
-    'catalog-character'
-);
-
-$altoRouter->map(
-    'GET',
-    '/catalogue/type/[i:id]',
-    [
-        "method" => "displayType",
-        "controller" => "CatalogController"
-    ],
-    'catalog-type'
-);
 
 
 $matchingRoute = $altoRouter->match();

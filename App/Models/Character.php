@@ -29,7 +29,7 @@ Class Character{
     
        // je demande à récupérer les données au format objet de type Category
        $allCharacters = $pdoStatement->fetchAll(PDO::FETCH_CLASS,Character::class);
-    
+       
        // le but est de renvoyer l'objet 
        return $allCharacters;
        }

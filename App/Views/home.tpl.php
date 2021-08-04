@@ -1,18 +1,13 @@
 
 <section class="hero">
     <div class="container">
-      <!-- Breadcrumbs -->
-      <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a href="<?= $absoluteURL ?>/">Home</a></li>
-        <li class="breadcrumb-item active">Détente</li>
-      </ol>
+     
       <!-- Hero Content-->
       <div class="hero-content pb-5 text-center">
-        <h1 class="hero-heading">Categorie (id:<?= $viewData['idCategory'] ?>)</h1>
+        <h1 class="hero-heading">Les personnages de Sonic</h1>
         <div class="row">
           <div class="col-xl-8 offset-xl-2">
-            <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt.</p>
+           
           </div>
         </div>
       </div>
@@ -38,21 +33,21 @@
         </div>
       </header>
       <div class="row">
-        <?php foreach($allCharacters as $character) : ?>
+        <?php foreach($Characters as $character) : ?>
         <!-- product-->
         <div class="product col-xl-3 col-lg-4 col-sm-6">
           <div class="product-image">
-            <a href="<?= $absoluteURL ?>/catalogue/produit/<?= $produit->getId() ?>" class="product-hover-overlay-link">
-              <img src="<?= $absoluteURL ?>/<?= $produit->picture ?>" alt="product" class="img-fluid">
+            <a href="<?= $absoluteURL ?>/catalogue/produit/<?= $character->getId() ?>" class="product-hover-overlay-link">
+              <img src="<?= $absoluteURL ?>/<?= $character->getpicture() ?>" alt="product" class="img-fluid">
             </a>
           </div>
           <div class="product-action-buttons">
             <a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a>
-            <a href="<?= $absoluteURL ?>/catalogue/produit/<?= $produit->getId() ?>" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
+            <a href="<?= $absoluteURL ?>/catalogue/produit/<?= $character->getId() ?>" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
           </div>
           <div class="py-2">
             <p class="text-muted text-sm mb-1">Chausson</p>
-            <h3 class="h6 text-uppercase mb-1"><a href="<?= $absoluteURL ?>/catalogue/produit/<?= $produit->getId() ?>" class="text-dark"><?= $produit->getName() ?></a></h3><span class="text-muted">40€</span>
+            <h3 class="h6 text-uppercase mb-1"><a href="<?= $absoluteURL ?>/catalogue/produit/<?= $character->getId() ?>" class="text-dark"><?= $character->getName() ?></a></h3><span class="text-muted">40€</span>
           </div>
         </div>
         <!-- /product-->

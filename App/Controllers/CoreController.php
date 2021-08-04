@@ -23,8 +23,8 @@ class CoreController {
         
         require_once __DIR__.'/../Views/header.tpl.php';
 
-        extract($viewData);
-        
+       $test = extract($viewData);
+       
         require_once __DIR__."/../Views/{$viewName}.tpl.php";
 
         

@@ -21,10 +21,10 @@ class MainController extends CoreController{
 
         
         $parametresPourLaVue = [
-            "Character" => $allCharacterQueJeCherche,
+            "Characters" => $allCharacterQueJeCherche,
             
         ];
-
+        
         // TODO à modifier car il manque les infos à afficher, en plus de l'idCategory
         $this->show('home', $parametresPourLaVue);
 

@@ -21,14 +21,14 @@ class CoreController {
         
         $absoluteURL = isset($_SERVER['BASE_URI']) ? $_SERVER['BASE_URI'] : '';
         
-        require_once __DIR__.'/../views/header.tpl.php';
+        require_once __DIR__.'/../Views/header.tpl.php';
 
         extract($viewData);
         
-        require_once __DIR__."/../views/{$viewName}.tpl.php";
+        require_once __DIR__."/../Views/{$viewName}.tpl.php";
 
         
-        require_once __DIR__.'/../views/footer.tpl.php';
+        require_once __DIR__.'/../Views/footer.tpl.php';
 
         
     }

@@ -4,19 +4,44 @@ namespace App\Models;
 
 use PDO;
 use App\Utils\Database;
+use App\Models\CoreModels;
 
-Class Character{
+Class Character extends CoreModels{
 
-
-    private $id;
-    private $name;
-    private $description;
-    private $picture;
-    private $created_at;	
-    private $updated_at;
+    
+        
+    /**
+     * description
+     *
+     * @var string
+     */
+    private $description;    
+    /**
+     * nom de l'image
+     *
+     * @var string
+     */
+    private $picture;    
+    /**
+     * clé de liaison avec la table type
+     *
+     * @var int
+     */
     private $type;
     
-
+    /**
+     * Le nom du type de personnage
+     *
+     * @var string
+     */
+    private $typeName;
+    
+    
+    /**
+     * findAllForHome requete pour l'affichage des personnages
+     *
+     * @return array
+     */
     public function findAllForHome(){
 
         $pdo = Database::getPDO();
@@ -38,33 +63,7 @@ Class Character{
        }
 
 
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Get the value of name
-     */ 
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */ 
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
+    
 
     /**
      * Get the value of description
@@ -106,46 +105,7 @@ Class Character{
         return $this;
     }
 
-    /**
-     * Get the value of created_at
-     */ 
-    public function getCreated_at()
-    {
-        return $this->created_at;
-    }
-
-    /**
-     * Set the value of created_at
-     *
-     * @return  self
-     */ 
-    public function setCreated_at($created_at)
-    {
-        $this->created_at = $created_at;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of updated_at
-     */ 
-    public function getUpdated_at()
-    {
-        return $this->updated_at;
-    }
-
-    /**
-     * Set the value of updated_at
-     *
-     * @return  self
-     */ 
-    public function setUpdated_at($updated_at)
-    {
-        $this->updated_at = $updated_at;
-
-        return $this;
-    }
-
+    
     /**
      * Get the value of type
      */ 
@@ -162,6 +122,26 @@ Class Character{
     public function setType($type)
     {
         $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of typeName
+     */ 
+    public function getTypeName()
+    {
+        return $this->typeName;
+    }
+
+    /**
+     * Set the value of typeName
+     *
+     * @return  self
+     */ 
+    public function setTypeName($typeName)
+    {
+        $this->typeName = $typeName;
 
         return $this;
     }

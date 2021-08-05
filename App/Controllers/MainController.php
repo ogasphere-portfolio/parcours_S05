@@ -2,37 +2,27 @@
 
 namespace App\Controllers;
 
-
-
 use App\Models\Character;
 use App\Controllers\CoreController;
 
-
-
-class MainController extends CoreController{
-
-    
-    public function displayHome(){
-        // j'utilise la méthode show avec les bons paramètres
-        // je sais que cette méthode doit affiche la page home, obvious, le nom de la méthode
-        
+class MainController extends CoreController
+{
+    // Affichage de la page d'acceuil
+    public function displayHome()
+    {
         $CharacterModel = new Character();
-        $allCharacterQueJeCherche = $CharacterModel->findAllForHome();
+        $allCharacterSearch = $CharacterModel->findAllForHome();
 
-        
-        $parametresPourLaVue = [
-            "Characters" => $allCharacterQueJeCherche,
-            
+        $paramsForView = [
+            "Characters" => $allCharacterSearch,
         ];
-        
-        // TODO à modifier car il manque les infos à afficher, en plus de l'idCategory
-        $this->show('home', $parametresPourLaVue);
-
-        
+        $this->show('home', $paramsForView);
     }
-    
-    public function displayCreator(){
-        $this->show('creator');
 
+    // Affichage de la page des ccréateurs
+    public function displayCreator()
+    {
+
+        $this->show('creator');
     }
 }

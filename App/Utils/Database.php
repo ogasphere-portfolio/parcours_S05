@@ -10,11 +10,11 @@ class Database {
     private $dbh;
     private static $_instance;
     private function __construct() {
-        // Récupération des données du fichier de config
-        // la fonction parse_ini_file parse le fichier et retourne un array associatif
+        
         $absoluteURL = isset($_SERVER['BASE_URI']) ? $_SERVER['BASE_URI'] : '';
         
-        //$configData = parse_ini_file('../app/config.ini');
+        // Récupération des données du fichier de config
+        // la fonction parse_ini_file parse le fichier et retourne un array associatif
         $configData = parse_ini_file(__DIR__.'/../config.ini');
         try {
             $this->dbh = new PDO(

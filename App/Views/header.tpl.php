@@ -28,7 +28,7 @@
               <a href="<?= $altoRouter->generate('home') ?>" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="<?= $altoRouter->generate('home') ?>" class="nav-link">Créateurs du jeu</a>
+              <a href="<?= $altoRouter->generate('creator') ?>" class="nav-link">Créateurs du jeu</a>
             </li>
             
           </ul> 

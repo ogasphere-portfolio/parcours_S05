@@ -41,10 +41,10 @@ $altoRouter->map(
     'GET',
     '/createurs',
     [
-        "method" => "displayCréateur",
+        "method" => "displayCreator",
         "controller" => "MainController"
     ],
-    'createurs'
+    'creator'
 );
 
 

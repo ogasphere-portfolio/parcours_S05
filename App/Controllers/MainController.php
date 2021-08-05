@@ -31,5 +31,8 @@ class MainController extends CoreController{
         
     }
     
+    public function displayCreator(){
+        $this->show('creator');
 
+    }
 }

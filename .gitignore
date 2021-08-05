@@ -1,4 +1,4 @@
 /vendor/
 composer.lock
-app/config.ini
+App/config.ini
 *.bak

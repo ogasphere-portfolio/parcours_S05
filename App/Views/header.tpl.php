@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="<?= $absoluteURL ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?= $absoluteURL ?>/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= $absoluteURL ?>/assets/css/styles.css">
   <title>oShop</title>
 </head>
@@ -22,7 +21,7 @@
         <!-- Navbar Collapse -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
           
-        <ul class="navbar-nav mx-auto">
+        
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="<?= $altoRouter->generate('home') ?>" class="nav-link active">Home</a>
@@ -32,7 +31,7 @@
             </li>
             
           </ul> 
-        </ul>
+        
           
         </div>
       </div>

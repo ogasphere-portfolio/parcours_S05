@@ -1,10 +1,5 @@
 <?php
 
-use App\Controllers\MainController;
-use App\Controllers\CatalogController;
-
-
-
 // Fichier de Composer qui va charger les packages automatiquement
 require '../vendor/autoload.php';
 $altoRouter  = new AltoRouter();
@@ -18,15 +13,11 @@ if (isset($_GET['page'])) {
     $currentPage = "/";
 }
 
-
+//instanciation de altoRouter pour gérer les routes
 $altoRouter = new AltoRouter();
-
 $altoRouter->setBasePath($_SERVER['BASE_URI']);
 
-dump($_SERVER['BASE_URI']);
-// http://altorouter.com/usage/mapping-routes.html
-
-
+// route pour la page d'acceuil
 $altoRouter->map(
     'GET',
     '/',
@@ -37,6 +28,7 @@ $altoRouter->map(
     'home'
 );
 
+// route pour la page des createurs
 $altoRouter->map(
     'GET',
     '/createurs',
@@ -46,7 +38,6 @@ $altoRouter->map(
     ],
     'creator'
 );
-
 
 
 $matchingRoute = $altoRouter->match();
@@ -64,9 +55,10 @@ if ($matchingRoute) {
     
     $params = $matchingRoute['params'];
 
+    // Instanciation des controllers
     $controller = new $nomController();
-
     $controller->$nomMethode($params);
+    
 } else {
     // Je n'ai pas trouvé de route qui correspond
     exit('404 not found');

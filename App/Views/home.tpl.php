@@ -17,9 +17,9 @@
   <thead>
     <tr class="odd">
       <td class="column1"></td>
-      <th scope="col" abbr="description">Qui suis-je</th>
-      <th scope="col" abbr="type">Mon type</th>
-      <th scope="col" abbr="image">Ma photo</th>
+      <th scope="col" abbr="description" class="text-center" >Qui suis-je</th>
+      <th scope="col" abbr="type" class="text-center">Mon type</th>
+      <th scope="col" abbr="image" class="text-center">Ma photo</th>
     </tr>
   </thead>
 

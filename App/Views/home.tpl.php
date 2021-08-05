@@ -30,7 +30,7 @@
         <tr>
       <th scope="row" class="column1"><?= $character->getName() ?></th>
       <td><?= $character->getdescription() ?></td>
-      <td></td>
+      <td><?= $character->typeName ?></td>
       <td><img src="<?= $absoluteURL ?>/assets/images/<?= $character->getpicture() ?>" alt="product" class="img-fluid"></td>
      
     </tr>

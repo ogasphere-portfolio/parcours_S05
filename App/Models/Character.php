@@ -22,9 +22,12 @@ Class Character{
         $pdo = Database::getPDO();
     
         // je créer ma requete SQL
-       $sql = "SELECT * FROM `character` ORDER BY `name` ASC";
+       $sql = "SELECT `character`.*, `type`.`name` AS typeName FROM `character` 
+                INNER JOIN `type` ON `character`.`type_id` = `type`.`id`
+                ORDER BY `name` ASC";
     
-       // je demande à PDO de faire la requete
+
+      // je demande à PDO de faire la requete
        $pdoStatement = $pdo->query($sql);
     
        // je demande à récupérer les données au format objet de type Category

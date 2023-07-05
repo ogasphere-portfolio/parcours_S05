@@ -1,0 +1,18 @@
+<h1 id="dictionnaire-de-données">Dictionnaire de données</h1>
+<h2 id="personnage-character">Personnage (<code>character</code>)</h2>
+<p>|Champ|Type|Spécificités|Description|<br />
+|-|-|-|-|<br />
+|id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO<em>INCREMENT|L'identifiant du personnage|
+|name|VARCHAR(64)|NOT NULL|Le nom du personnage|
+|description|TEXT|NULL|La description du personnage|
+|picture|VARCHAR(128)|NULL|L'URL de l'image du personnage|
+|created</em>at|TIMESTAMP|NOT NULL, DEFAULT CURRENT<em>TIMESTAMP|La date de création du personnage|
+|updated</em>at|TIMESTAMP|NULL|La date de la dernière mise à jour du personnage|<br />
+|type|entity|NULL|Le type (autre entité) du personnage|</p>
+<h2 id="type-de-personnage-type">Type de personnage (<code>type</code>)</h2>
+<p>|Champ|Type|Spécificités|Description|<br />
+|-|-|-|-|<br />
+|id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO<em>INCREMENT|L'identifiant du type|
+|name|VARCHAR(64)|NOT NULL|Le nom du type|
+|created</em>at|TIMESTAMP|DEFAULT CURRENT<em>TIMESTAMP|La date de création du type|
+|updated</em>at|TIMESTAMP|NULL|La date de la dernière mise à jour du type|</p>

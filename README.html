@@ -1,6 +1,48 @@
-<h1 id="le-parcours-fire-architecture">Le Parcours 🔥 Architecture</h1>
-<p>Cette fois, pas de petits exercices indépendants, pas de "Yeah !" et pas de "Nope".  <br />
-Vous allez avoir un petit projet à mettre en place. On ne va pas vous dire quoi faire à chaque étape mais vous donner le projet global.<br />
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Le Parcours &colon;fire&colon; Architecture</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="le-parcours-fire-architecture">Le Parcours 🔥 Architecture</h1>
+<p>Cette fois, pas de petits exercices indépendants, pas de &quot;Yeah !&quot; et pas de &quot;Nope&quot;.<br>
+Vous allez avoir un petit projet à mettre en place. On ne va pas vous dire quoi faire à chaque étape mais vous donner le projet global.
 Lisez bien le sujet, on attend de vous que vous mettiez en place la même structure qu'on a vu cette saison, des contrôleurs, des routes, modèles et des vues.</p>
 <h2 id="au-programme">Au programme</h2>
 <ul>
@@ -13,7 +55,7 @@ Lisez bien le sujet, on attend de vous que vous mettiez en place la même struct
 <li><em>Views</em></li>
 <li><em>Models</em></li>
 <li><strong>Pull Request</strong></li>
-<li>…</li>
+<li>...</li>
 </ul>
 <p>Bon courage 💪</p>
 <h2 id="sujet--après-mario-voici-sonic-tada">Sujet : Après Mario, voici Sonic 🎉</h2>
@@ -22,29 +64,29 @@ Lisez bien le sujet, on attend de vous que vous mettiez en place la même struct
 <li>1 page d'accueil avec tous les personnages de l'univers <strong>Sonic</strong>, par ordre alphabétique</li>
 <li>1 page avec les 3 créateurs du premier jeu <strong>Sonic</strong></li>
 </ul>
-<p>Mais on ne souhaite pas le faire n'importe comment.  <br />
-Vous avez appris cette saison à bien structurer/organiser votre code et vos fichiers.  <br />
+<p>Mais on ne souhaite pas le faire n'importe comment.<br>
+Vous avez appris cette saison à bien structurer/organiser votre code et vos fichiers.<br>
 Il va falloir appliquer cela sur ce projet.</p>
 <p>🐔 En plus, il va falloir coder dans une branche à part, car, à la fin, il faudra créer une <strong>Pull Request</strong> du code pour ce parcours.</p>
 <h3 id="base-de-données">Base de données</h3>
 <p>La modélisation de la base de données est fournie :</p>
 <ul>
-<li><a href="docs/dictionnaire-de-donnees.md">dictionnaire de données</a></li>
-<li><a href="docs/S05-parcours-MCD.svg">MCD</a></li>
+<li><a href="Projets/parcours_S05/docs/dictionnaire-de-donnees.html">dictionnaire de données</a></li>
+<li><a href="Projets/parcours_S05/docs/S05-parcours-MCD.svg">MCD</a></li>
 </ul>
-<p>La base de données est fournie aussi : <a href="docs/sonic.sql">fichier à importer</a></p>
-<p>⚠️ Attention, le nom des tables sont des mots-clés réservés du langage SQL.  <br />
-Pour éviter les erreurs dans les requêtes SQL, il faut entourer le nom par 1 backtick <code>`</code>  <br />
-Exemple : <code>SELECT * FROM `matable`</code></p>
+<p>La base de données est fournie aussi : <a href="Projets/parcours_S05/docs/sonic.sql">fichier à importer</a></p>
+<p>⚠️ Attention, le nom des tables sont des mots-clés réservés du langage SQL.<br>
+Pour éviter les erreurs dans les requêtes SQL, il faut entourer le nom par 1 backtick <code>`</code><br>
+Exemple : <code>SELECT * FROM `matable` </code></p>
 <h3 id="structure-du-projet">Structure du projet</h3>
-<p>La structure du projet étant similaire au projet de la saison, vous pouvez, si vous le souhaitez, en récupérer les sources pour les modifier pour correspondre au parcours.  <br />
+<p>La structure du projet étant similaire au projet de la saison, vous pouvez, si vous le souhaitez, en récupérer les sources pour les modifier pour correspondre au parcours.<br>
 ⚠️ Attention, tout le code présent dans vos sources doit être utile au projet. <strong>Il ne doit rester aucun code supperflu</strong>.</p>
 <p>La qualité du code est encore plus importante dans ce parcours :</p>
 <ul>
 <li>nom de classes, méthodes, variables claires</li>
 <li>indentation</li>
 <li>commentaires</li>
-<li><strong>aucun "groupe de code" en doublon</strong></li>
+<li><strong>aucun &quot;groupe de code&quot; en doublon</strong></li>
 <li>application des règles et conventions vues en cours</li>
 </ul>
 <p>À la fin, vous ferez une pull request, alors pensez à coder dans une branche séparée !</p>
@@ -67,10 +109,13 @@ Exemple : <code>SELECT * FROM `matable`</code></p>
 <li>Les créateurs ne sont pas dans la base de données, on vous demande de les ajouter <em>en dur</em> dans votre vue !</li>
 <li>il n'y a qu'une seule page, et cette page affiche les 3 créateurs</li>
 <li>Pour chaque créateur, afficher un titre de niveau 3 et un beau <code>lorem ipsum</code> des familles 😎</li>
-<li>Liste des créateurs :<ul>
+<li>Liste des créateurs :
+<ul>
 <li><a href="https://fr.wikipedia.org/wiki/Hirokazu_Yasuhara">Hirokazu Yasuhara</a></li>
 <li><a href="https://fr.wikipedia.org/wiki/Yuji_Naka">Yuji Naka</a></li>
-<li><a href="https://fr.wikipedia.org/wiki/Naoto_%C5%8Cshima">Naoto Ōshima</a></li></ul></li>
+<li><a href="https://fr.wikipedia.org/wiki/Naoto_%C5%8Cshima">Naoto Ōshima</a></li>
+</ul>
+</li>
 </ul>
 <h3 id="bonus">Bonus</h3>
 <ul>
@@ -79,3 +124,8 @@ Exemple : <code>SELECT * FROM `matable`</code></p>
 </ul>
 <h3 id="chicken">🐔</h3>
 <p>Pensez à créer une <strong>Pull Request</strong> 😉 !</p>
+
+        
+        
+    </body>
+    </html>

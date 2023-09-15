@@ -36,10 +36,10 @@ Il va falloir appliquer cela sur ce projet.
 
 La modélisation de la base de données est fournie :
 
-- [dictionnaire de données](docs/dictionnaire-de-donnees.md)
-- [MCD](docs/S05-parcours-MCD.svg)
+- [dictionnaire de données](Projets/parcours_S05/docs/dictionnaire-de-donnees.md)
+- [MCD](Projets/parcours_S05/docs/S05-parcours-MCD.svg)
 
-La base de données est fournie aussi : [fichier à importer](docs/sonic.sql)
+La base de données est fournie aussi : [fichier à importer](Projets/parcours_S05/docs/sonic.sql)
 
 :warning: Attention, le nom des tables sont des mots-clés réservés du langage SQL.  
 Pour éviter les erreurs dans les requêtes SQL, il faut entourer le nom par 1 backtick `` ` ``  
